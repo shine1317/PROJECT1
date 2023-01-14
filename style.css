@@ -1,0 +1,647 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+/* my code */
+
+* {
+    text-decoration: none;
+}
+main {
+    padding-top: 100px; /* all the content below header (100px height) will come after the header*/
+}
+/* body {
+    background-color: #f3f3f3;
+
+} */
+header {
+    background-color: #fff;
+    width:100%;
+    height:100px;
+    position: fixed; /* header nav follows you*/
+    top: 0;
+    right:0;
+    left:0;
+
+}
+
+header .header-brand {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 28px;
+    color: #111;
+    font-weight:900;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+header nav ul {
+    display: block;
+margin: 0 auto;
+width: fit-content; /*centers your portfolio, about me, contact navigation*/
+
+}
+
+header nav ul li{
+    display: inline-block; /*this puts the links next to eachother in a line in the block*/
+    float: left; /*do this to get rid of the slight gap in between the links*/
+    list-style: none;
+    padding: 0px 16px;
+    
+}
+
+header nav ul li a{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 16px;
+    color: #111;
+    text-transform: uppercase;
+}
+header .header-cases {
+    display: none;
+}
+
+.link-navigation{
+    
+    font-family: 'Catamaran', sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+} 
+body p {
+    font-family: 'Varela Round', sans-serif;
+}
+
+
+/* header for pc */
+
+
+@media only screen and (min-width: 1000px) {
+    header .header-brand {
+        
+        margin: 31px 0;
+        text-align: left;
+        padding: 0px 20px 0px 40px;
+        border-right: 3px solid #111;
+        float: left;
+        line-height: 38px; /*makes the right line longer*/
+    }
+    
+header nav ul {
+   float: left;
+    margin: 20px 0px 0px 20px;
+
+}
+
+header nav ul li{
+    display: inline-block; /*this puts the links next to eachother in a line in the block*/
+    float: left; /*do this to get rid of the slight gap in between the links*/
+    list-style: none;
+    padding: 0px 16px;
+    
+}
+    header nav ul li a{
+        font-family: 'Catamaran', sans-serif;
+        font-size: 16px;
+        color: #111;
+        line-height: 60px;
+        
+    }
+
+header .header-cases {
+        display: block;
+        font-family: 'Catamaran', sans-serif;
+        font-size: 16px;
+        color: #111;
+        text-transform: uppercase;
+        line-height: 38px;
+        border: 1px solid #111;
+        float: right;
+        margin-right: 40px;
+        margin-top: 30px;
+        padding: 0 20px;
+    }
+}
+/* index */
+.index-banner {
+    width: 100%;
+    height: calc(100vh - 100px); /* vh is view height of device, calc lets you subtract or add value*/
+    background-image: url('Images/officebanner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+.vertical-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+.index-banner h2 {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 60px;
+    color:#fff;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 3px 3px 8px #111; /*this puts shading behind text, first 2 is size top/bottom, sides, then blur, then color*/
+    line-height: 70px;
+}
+.index-banner h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    color:#fff;
+    font-weight: 100;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 4px 4px 5px #111; /*this puts shading behind text, first 2 is size top/bottom, sides, then blur, then color*/
+    line-height: 40px;
+}
+
+.index-boxlink-1 {
+    margin:16px 16px 0px;
+    width: calc(100% - 32px); /*16 times 2 to get that number 32*/
+    height:100px;
+    background-color: #f2f2f2;
+}
+.index-links {
+    overflow:hidden;
+}
+.index-links div {
+    margin:16px 16px 0px;
+    width: calc(100% - 32px); /*16 times 2 to get that number 32*/
+    height:100px;
+    background-color: #f2f2f2;
+}
+.index-links div h3 {
+    font-family:'Catamaran', sans-serif;
+    font-size: 28px;
+    color:#111;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 100px;
+}
+
+@media only screen and (min-width: 1000px) {
+    .wrapper {
+        width: 1000px;
+        margin: 0 auto;
+
+    }
+    .index-banner {
+        width: 100%;
+        height: 450px;
+        
+    }
+    .index-banner h1 {
+        display:block;
+        width: 560px;
+        margin: 0 auto;
+    }
+    .index-links div {
+        margin:20px 10px 0px;
+        width: calc(100% - 32px); /*16 times 2 to get that number 32*/
+        height:210px;
+        background-color: #f2f2f2;
+        float: left;
+    }
+    .index-boxlink-square {
+        width: calc(25% - 20px) !important;
+
+
+    }
+    .index-boxlink-rectangle {
+        width: calc(50% - 20px) !important;
+    }
+    .index-links div h3 {
+    
+        line-height: 230px;
+            
+    }
+}
+/* cases */
+
+.cases-links h2 {
+    font-family:'Catamaran', sans-serif;
+    font-size: 28px;
+    color:#111;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+.cases-links .cases-link p {
+    font-family:'Catamaran', sans-serif;
+    font-size: 24px;
+    color:#111;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 48%;
+    
+}
+.cases-links .cases-link {
+    width: 230px; /* how wide the boxes of each case will be */
+    height: 230px;
+    background-color: #e3e3e3;
+    float: left; /* this makes the boxes line up next to eachother isntead of being on top of one another*/
+    margin: 10px 10px 0px;
+    font-size: 24px;
+    font-weight:100;
+    
+}
+
+.cases-links {
+   overflow: hidden;
+   margin-bottom: 20px;
+}
+
+.cases-contact {
+    width: 0 auto;
+    margin: 10px 10px 0px;
+    overflow: hidden;
+    
+}
+.cases-contact div {
+    background-color: #e3e3e3;
+    text-align: center;
+    height: 200px;
+    font-size: 24px;
+    font-family:'Catamaran', sans-serif;
+    font-weight: 400;
+    
+}
+
+/* footer */
+footer {
+    width: calc(100% - 80px);
+    padding: 40px 40px;
+    background-color: #111;
+    margin-top: 20px;
+    overflow: hidden; /* container has trouble when all items inside are floating, so do this to fix it*/
+}
+footer ul{
+    width: fit-content;
+    float: left;
+    padding-left: 20px;
+    color:#f2f2f2;
+    
+    
+}
+footer ul li{
+display: block;
+list-style: none;
+
+    
+}
+footer ul li a{
+font-family: 'Catamaran', sans-serif;
+font-size: 24px;
+color: rgb(250, 245, 245);
+line-height: 40px;
+}
+
+.footer-cases-links {
+    display: none;
+}
+
+.footer-sm {
+    width: 50px;
+    float: right;
+
+}
+.footer-sm img{
+    width: 100%;
+    margin-bottom: 30px;
+    
+    
+}
+
+@media only screen and (min-width: 1000px) {
+    .footer-cases-links {
+        display: block;
+
+    }
+    footer ul li p {
+        font-family: 'Catamaran', sans-serif;
+        font-size: 16px;
+        color: white;
+        line-height: 40px;
+        
+    }
+    footer ul{
+        width: fit-content;
+        float: left;
+        padding-left: 20px;
+        color:#f2f2f2;
+        padding-right: 30px;
+        
+    }
+
+    footer ul li a {
+        font-size: 16px;
+        font-family: 'Catamaran', sans-serif;
+    }
+}
+
+/* case 1 video */
+.case-vid h2{
+    font-family:'Catamaran', sans-serif;
+    font-size: 28px;
+    color:#111;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+.videowrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+.case-vid iframe {
+/* display: block;
+margin: 0px auto;
+padding: 50px 0; */
+position: absolute;
+}
+
+ .case-vid article h3 {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 28px;
+    color: #111;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    
+ }
+.case-vid article p {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 16px;
+    color: #111;
+    text-transform: uppercase;
+    line-height: 24px;
+    font-weight: 400;
+   
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .case-vid article p {
+      
+        font-weight: 400;
+        column-count: 3;
+        column-gap: 30px;
+    }
+}
+
+
+/* case2 */
+    .body-case2 {
+        
+        padding-top: 200px;
+    }
+    .present {
+        width: 410px;
+        margin: 0 auto;
+    }
+    .promo img {
+      
+    }
+    .promo p {
+        font-size: 30px;
+        font-weight: 900;
+        color:rgba(207, 129, 248, 0.8);
+        text-transform: uppercase;
+        position:relative;
+        left:120px;
+        top:-200px;
+        font-family: 'Amatic SC', cursive;;
+    }
+    .box, .lid {
+        background:
+            radial-gradient(white 15%, transparent 15.1%),
+            rgb(252, 170, 215);
+        background-position: 0 0, 25px 25px;
+        background-size: 50px 50px;
+        position:relative;
+        margin: 0 auto;
+    }
+
+
+    .lid {
+        width: 400px;
+        height: 70px;
+        box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+        z-index: 1; /*goes over the box*/
+        padding: 0 2px; /*this makes the lid tiny bit bigger than the box, 0 topbot, 2 leftright*/
+        background-color: rgb(216.52,52);
+        top:0;
+        left:0; /*need to set initial position top and left in order to transition*/
+        transition: 
+            top ease-out 0.5s,
+            left ease-out 0.5s,
+            transformZ ease-out 0.5s;
+    
+    }
+    .box{
+        width: 400px;
+        height: 250px;
+    }
+
+    .box span, .lid span:last-child{
+        position: absolute;
+        display: block;
+        background: rgba(246,248,129,0.9);
+        box-shadow: 1px 2px 3px rgba(0,0,0,0.1);
+        
+    }
+    .lid span:last-child { /*dont put space between colon or it ownt work*/
+        width: 60px;
+        height:100%;
+        left: 172px;
+        /* makes the yellow ribbon up and down */
+    }
+    .box span:first-child { /*dont put space between colon or it ownt work*/
+        width: 100%;
+        height:60px;
+        top: 80px; /*comes from the top 80px*/
+        /* makes the yellow ribbon across */
+    }
+
+    .box span:last-child { /*dont put space between colon or it ownt work*/
+        width: 60px;
+        height:100%;
+        left: 170px;
+        /* makes the yellow ribbon up and down */
+    }
+    .promo {
+        text-align: center;
+        position:relative; /*can move it up and down relative to its original position*/
+        top:10px; /*moves the cat image down a little bit so you don't see
+                    the background*/
+        height:0px;
+        transition: ease-out 0.7s;
+    }
+
+    .present:hover .lid {
+        /* move lid up */
+        top:-165px;
+        transform: rotateZ(-15deg);
+        right:10px;
+    }
+    .present:hover .promo {
+        top: -160px;
+    }
+
+    .present:hover .promo-text {
+        top: -200px;
+        transform: scale(2);
+    }
+ 
+
+
+
+
+
+
+
+    
+/* case3 gallery */
+.gallery-links-h2 {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 28px;
+    color: #111;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+   padding: 10px;
+}
+.gallery-links {
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: center;
+}
+.gallery-img {
+    flex-basis: 90%;
+    margin: 10px;
+}
+.gallery-img img{
+    width: 100%; /* as big as flex box*/
+    height: 400px;
+    
+    
+}
+
+
+@media only screen and (min-width: 762px) {
+    
+    .gallery-img {
+        flex-basis: 300px;
+     
+    }
+  
+    .gallery-img img:hover {
+        transform: scale(1.5);
+    }
+    
+}
+
